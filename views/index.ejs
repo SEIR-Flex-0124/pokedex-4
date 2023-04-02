@@ -11,10 +11,8 @@
         <h1>Pokemon</h1>
        <ul>
         <% for(let i = 0; i <pokemon.length; i ++) { %> 
-
-         <!-- <li><%= pokemon[i].img %></li> -->
          
-         <li><img src=<%= pokemon[i].img %> alt"pokemon pics" /> </li>
+         <li><a href="/pokemon/<%= i %>"><img src=<%= pokemon[i].img %> alt"pokemon pics" /></a></li>
          
          
             <% }%>
