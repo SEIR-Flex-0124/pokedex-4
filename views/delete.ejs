@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>delete page</h1>
+    <h1>Are you sure you want to delete?</h1>
+    <form method="POST" action="/pokemon/<%= idx %>?_method=DELETE">
+        <input type="submit" value="Delete">
+    </form>
 </body>
 </html>
