@@ -54,15 +54,15 @@ app.get('/pokemon/:id/delete', (req, res) => {
     res.render(`delete.ejs`, {pokemonToDelete, idx: req.params.id})
 })
 
-app.delete('/pokemon/:id/delete', (req, res) => {
-    const deletePokemon = pokemon[req.params.id];
+app.delete('/pokemon/:id', (req, res) => {
+   // const deletePokemon = pokemon[req.params.id];
     pokemon.splice(req.params.id, 1);
     res.redirect(`/pokemon`)
 })
 
-app.post('/:id', (req, res) => {
-    let pokemonUpdate = req.body
+// app.post('/:id', (req, res) => {
+//     let pokemonUpdate = req.body
 
-})
+// })
 
 app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
